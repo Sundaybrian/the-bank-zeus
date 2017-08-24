@@ -6,17 +6,21 @@ function BankAccount(name,balance) {
 
 };
 
+
+
+
+
 //user interface
 $(document).ready(function() {
-  $("form#create-account").submit(function(event){
-     event.preventDefault();
-   var inputtedFullName=$("input#full-name").val();
-   var inputtedBalance=$("input#initial-deposit").val();
-   console.log(inputtedFullName,inputtedBalance);
 
-   var newCustomer=new BankAccount(inputtedFullName,inputtedBalance);
+  $("form#create-account").submit(function(event){
+    event.preventDefault();
+    var inputtedFullName=$("input#full-name").val();
+    var inputtedBalance=$("input#initial-deposit").val();
+    console.log(inputtedFullName,inputtedBalance);
+
+    var newCustomer=new BankAccount(inputtedFullName,inputtedBalance);
 
 
   });
-
 });
