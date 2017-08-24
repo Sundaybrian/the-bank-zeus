@@ -14,6 +14,8 @@ $(document).ready(function() {
    var inputtedBalance=$("input#initial-deposit").val();
    console.log(inputtedFullName,inputtedBalance);
 
+   var newCustomer=new BankAccount(inputtedFullName,inputtedBalance);
+
 
   });
 
