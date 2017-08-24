@@ -11,8 +11,8 @@ $(document).ready(function() {
   $("form#create-account").submit(function(event){
      event.preventDefault();
    var inputtedFullName=$("input#full-name").val();
-   
-   console.log(inputtedFullName);
+   var inputtedBalance=$("input#initial-deposit").val();
+   console.log(inputtedFullName,inputtedBalance);
 
 
   });
